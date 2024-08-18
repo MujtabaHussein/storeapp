@@ -22,6 +22,9 @@ const Wrapper = styled.div`
   width: var(--view-width);
   max-width: var(--max-width);
   margin: 2rem auto;
+  padding: 1.4rem 0.5rem;
+  /* background: red; */
+
   .logo {
     font-size: 2.4rem;
     font-weight: 700;
@@ -31,10 +34,21 @@ const Wrapper = styled.div`
   nav {
     display: flex;
     gap: 1.2rem;
+    /* background: yellow; */
   }
   nav a {
     color: var(--grey-700);
     letter-spacing: 1px;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    /* justify-content: start; */
+    nav {
+      flex-direction: row;
+      justify-content: start;
+    }
   }
 `
 export default Navbar

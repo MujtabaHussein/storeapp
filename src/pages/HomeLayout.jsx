@@ -11,7 +11,7 @@ const HomeLayout = () => {
       <Navbar />
       <section className='page'>
         {isPageLoading ? (
-          <div className='loading'></div>
+          <div className='loading' style={{ margin: '0 auto' }}></div>
         ) : (
           <Outlet context={{ value }} />
         )}
